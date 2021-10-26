@@ -1,4 +1,11 @@
-"scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$MYTESTAPPSEC@github.com/lirantal/dockly.git"
-  }
-  
+{
+	"scripts": {
+		"build": "gatsby build",
+		"dev": "gatsby develop o",
+		"format": "prettier --write \"**/*.{js,jsx,md,css,scss,json,html,yaml}\"",
+		"start": "npm run develop",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean",
+		
+	}
+}
