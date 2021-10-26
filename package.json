@@ -1,15 +1,4 @@
-{
-	"scripts": {
-		"build": "gatsby build",
-		"dev": "gatsby develop o",
-		"format": "prettier --write \"**/*.{js,jsx,md,css,scss,json,html,yaml}\"",
-		"start": "npm run develop",
-		"serve": "gatsby serve",
-		"clean": "gatsby clean",
-		"dev:clean": "gatsby clean && gatsby develop -H 0.0.0.0",
-		"build:clean": "yarn clean && gatsby build",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
-		"lint:styles": "stylelint \"src/**/*.scss\" --fix"
-	}
-}
+"scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$MYTESTAPPSEC@github.com/lirantal/dockly.git"
+  }
+  
