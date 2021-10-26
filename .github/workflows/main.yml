@@ -16,7 +16,6 @@ jobs:
       - uses: actions/setup-node@v2
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          node-version: 14
           access-token: ${{ secrets.MYTESTAPPSEC }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
@@ -35,7 +34,7 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.MYTESTAPPSEC}}
 
   publish-gpr:
     needs: build
@@ -52,4 +51,4 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.MYTESTAPPSEC}}
