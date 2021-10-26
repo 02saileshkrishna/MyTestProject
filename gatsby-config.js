@@ -1,3 +1,3 @@
 module.exports = {
-  pathPrefix: "/myapp-reponame",
+  pathPrefix: "/MyTestProject",
 }
