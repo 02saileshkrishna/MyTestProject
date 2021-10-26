@@ -74,7 +74,6 @@
 "name": "example",
 "private": true,
 "scripts": {
-"deploy": "gatsby build --prefix-paths && main -d public",
 "dev": "gatsby develop -H 0.0.0.0",
 "dev:clean": "gatsby clean && gatsby develop -H 0.0.0.0",
 "build": "gatsby build",
